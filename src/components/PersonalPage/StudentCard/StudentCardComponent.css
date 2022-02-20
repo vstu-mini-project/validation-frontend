@@ -1,0 +1,31 @@
+
+.studentCard--title {
+    margin: 0 0 16px 0;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.studentImage--container {
+    width: 100%;
+    height: 100%;
+    max-width: 180px;
+    max-height: 240px;
+
+    margin: 0 16px 0 0;
+}
+
+.studentImage {
+    width: 180px;
+    height: 240px;
+
+    object-fit: cover;
+    background-color: black;
+}
+
+.studentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

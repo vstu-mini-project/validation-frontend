@@ -1,0 +1,13 @@
+
+.documentList {
+    margin-top: 40px;
+}
+
+.documentList--title {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+td {
+    width: 200px;
+}

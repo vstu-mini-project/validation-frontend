@@ -4,11 +4,12 @@ import PersonalPageComponent from './components/PersonalPage/PersonalPageCompone
 import HeaderComponent from './components/Header/HeaderComponent';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import AutorizationComponent from './components/Authorization/AuthorizationComponent';
+import RegistrationComponent from './components/Authorization/RegistrationComponent';
 
 ReactDOM.render(
   <React.StrictMode>
-   <AutorizationComponent/>
+   <RegistrationComponent/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

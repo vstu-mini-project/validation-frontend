@@ -19,7 +19,7 @@
 Ответ:
 - username
 - token
-- 
+
 Data Service
 - Bearer_токен
 

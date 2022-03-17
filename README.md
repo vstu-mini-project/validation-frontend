@@ -11,9 +11,20 @@
 - localhost:8080/api/v1/auth/login 
 - localhost:8080/api/v1/auth/register
 
+Запустить Spring
+`http://localhost:8080/swagger-ui/index.html`
 ## Цели
 ### Логин
 Необходимо сделать авторизацию по логину и паролю. Принимать JWT токен
+Ответ:
+- username
+- token
+- 
+Data Service
+- Bearer_токен
+
+function authHeader
+- Authorization
 ### Регистрация
 Исправить регистрацию, поля как в БД:
 - Логин

@@ -9,7 +9,7 @@
 
 ## API
 - localhost:8080/api/v1/auth/login 
-- localhost:8080/api/v1/auth/register
+- localhost:8080/api/v1/auth/users
 
 Запустить Spring
 `http://localhost:8080/swagger-ui/index.html`

@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import AuthorisationService from "../../services/Student/Autorization/AuthorisationService";
 
 function Copyright(props) {
   return (
@@ -31,16 +32,18 @@ const theme = createTheme();
 export default function SignIn() {
   const handleSubmit = (event) => {
     event.preventDefault();
-    this.setState({
-      message: "",
-      loading: true
-    });
-    this.form.validateAll();
-    if (this.checkBtn.context._errors.length === 0) {
-      AuthService.login(this.state.username, this.state.password).then(
+      this.state = {
+          username: "",
+          password: "",
+          loading: false,
+          message: ""
+      };
+    if (true) {
+        AuthorisationService.login(this.state.username, this.state.password).then(
         () => {
-          this.props.history.push("/profile");
-          window.location.reload();
+            console.log(localStorage.getItem('user'))
+          // this.props.history.push("/profile");
+          // window.location.reload();
         },
         error => {
           const resMessage =

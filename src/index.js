@@ -5,6 +5,8 @@ import HeaderComponent from './components/Header/HeaderComponent';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import AuthorizationComponent from './components/Authorization/AuthorizationComponent';
+import { Switch } from '@mui/material';
+import {BrouserRoutor as Router} from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +14,8 @@ ReactDOM.render(
 
   </React.StrictMode>,
   document.getElementById('root')
+
+    
 );
 
 // If you want to start measuring performance in your app, pass a function

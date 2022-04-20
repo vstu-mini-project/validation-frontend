@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Switch } from '@mui/material';
+import AuthorizationComponent from './components/Authorization/AuthorizationComponent';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div className='app'>
+      <Navbar/>
+      <Switch>
+        <Route path="/authorization" component = {AuthorizationComponent}/>
+      </Switch>
     </div>
+    </BrowserRouter>
   );
 }
 

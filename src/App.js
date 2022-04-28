@@ -1,21 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
-import { Switch } from '@mui/material';
-import AuthorizationComponent from './components/Authorization/AuthorizationComponent';
+import * as React from "react";
+import Link from "@mui/material/Link";
 
-
-function App() {
-  return (
-    <BrowserRouter>
-    <div className='app'>
-      <Navbar/>
-      <Switch>
-        <Route path="/authorization" component = {AuthorizationComponent}/>
-      </Switch>
-    </div>
-    </BrowserRouter>
-  );
+export default function App() {
+    return (
+        <section>
+            <h1>App page</h1>
+            <ul>
+                <li><Link href="/sign-in">Логин</Link></li>
+                <li><Link href="/sign-up">Регистрация</Link></li>
+            </ul>
+        </section>
+    );
 }
-
-export default App;

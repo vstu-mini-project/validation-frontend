@@ -5,12 +5,16 @@ import "./index.css";
 import App from "./App";
 import AuthorizationComponent from "./components/Authorization/AuthorizationComponent";
 import RegistrationComponent from "./components/Authorization/RegistrationComponent";
+import PrivateRoute from "./components/PrivateRoute";
 
 const rootElement = document.getElementById("root");
+console.log(localStorage.getItem("user"))
 render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App/>}/>
+            <Route path="/" element={<PrivateRoute/>}>
+                <Route path="/" element={<App/>}/>
+            </Route>
             <Route path="/sign-in" element={<AuthorizationComponent/>}/>
             <Route path="/sign-up" element={<RegistrationComponent/>}/>
             <Route

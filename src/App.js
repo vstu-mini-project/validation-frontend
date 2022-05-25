@@ -1,14 +1,17 @@
 import * as React from "react";
-import Link from "@mui/material/Link";
+import HeaderComponent from "./components/Header/HeaderComponent"
+import DocumentComponent from "./components/Document/DocumentComponent"
+import { Box } from "@mui/system";
 
 export default function App() {
     return (
-        <section>
-            <h1>App page</h1>
-            <ul>
-                <li><Link href="/sign-in">Логин</Link></li>
-                <li><Link href="/sign-up">Регистрация</Link></li>
-            </ul>
-        </section>
+        <Box
+            sx={{
+                display: 'flex',
+                height: '100%'
+            }}>
+            <HeaderComponent />
+            <DocumentComponent />
+        </Box>
     );
 }

@@ -52,5 +52,6 @@ img, .image {
 }
 
 #root {
-  padding: 40px 70px 40px 140px;
+  height: 100vh;
+  padding: 0;
 }
